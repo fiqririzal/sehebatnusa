@@ -111,7 +111,7 @@ class KeunggulanController extends Controller
         foreach ($data as $datas) {
             $datas->gambar = asset('/images/Keunggulan/' . $datas->gambar);
         }
-        return apiResponse(200, 'success', 'semua data Artikel', $data);
+        return apiResponse(200, 'success', 'semua data Keunggulan', $data);
     }
     public function show($id)
     {

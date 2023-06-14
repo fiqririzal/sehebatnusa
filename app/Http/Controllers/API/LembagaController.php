@@ -31,7 +31,7 @@ class LembagaController extends Controller
             $request->file('logo')->move($destination, $image);
 
             $lembaga = Lembaga::create([
-                'nama' => $request->judul,
+                'nama' => $request->nama,
                 'logo' => $image,
             ]);
             $lembaga->logo = asset('/images/lembaga/' . $lembaga->logo);
@@ -78,7 +78,6 @@ class LembagaController extends Controller
                     unlink($pleaseRemove);
                 }
             }
-
             $extension = $request->file('logo')->getClientOriginalExtension();
             $image = strtotime(date('Y-m-d H:i:s')).'.'.$extension;
             $destination = base_path('public/images/lembaga');
