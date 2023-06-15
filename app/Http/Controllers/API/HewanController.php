@@ -21,7 +21,6 @@ class HewanController extends Controller
         ];
         $message = [
             'judul.required' => 'mohon isikan judul nya bro',
-            // 'slug.required'    => 'mohon isikan nama nya bro',
             'detail.required'  => 'mohon isikan detail nya bro',
             'harga.required'   => 'mohon isikan harga nya bro',
             'image.required'   => 'mohon isikan gambar nya bro',

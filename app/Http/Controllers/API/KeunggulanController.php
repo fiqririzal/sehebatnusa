@@ -109,7 +109,7 @@ class KeunggulanController extends Controller
     {
         $data = Keunggulan::get();
         foreach ($data as $datas) {
-            $datas->gambar = asset('/images/Keunggulan/' . $datas->gambar);
+            $datas->gambar = asset('/images/keunggulan/' . $datas->gambar);
         }
         return apiResponse(200, 'success', 'semua data Keunggulan', $data);
     }
